@@ -1,0 +1,15 @@
+# hw2:5
+def chain(*ranges):
+    ret=''
+    for i in enumerate(ranges):
+
+        rngStr = i[1]
+        rng = (lambda r=rngStr: rngStr)
+
+        for m in rng():
+            ret += str(m)
+    return ret
+
+
+for i in chain(range(3), range(2,5)):
+    print(i)
