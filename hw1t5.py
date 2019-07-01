@@ -28,7 +28,7 @@ for i in enumerate(oper):
 dictOper.sort()
 res = ''
 m = 0
-while dictOper.__len__()>0:
+while dictOper.__len__()>0:  # __len__ лучше не использовать на прямую - для того, чтобы получить длину, есть len(dictOper)
     i = dictOper[m]
     expOrd = i[1]
     num1 = int(resNmbrs[expOrd])
